@@ -1,0 +1,15 @@
+{
+  "mentors": {
+    "mentors": [
+    {"id": 1, "name": "Денис Воронцов", "tg_username": "@GoNt1eRRR", "tg_chat_id": 2110069303},
+    {"id": 2, "name": "Алишер Кизатов", "tg_username": "@interstellar121", "tg_chat_id": 927169410}
+    ]
+  },
+  "postcards": {
+    "postcards": [
+      { "id": 0, "name": "Birthday", "body": "🎉✨Happy Birthday to YOU!✨🎉" },
+      { "id": 1, "name": "New Year", "body": "🎉✨ Happy New Year! ✨🎉" },
+      { "id": 2, "name": "Valentine's Day", "body": "💘✨ Happy Valentine’s Day! ✨💖" }
+    ]
+  }
+}
