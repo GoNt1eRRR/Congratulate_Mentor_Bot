@@ -1,8 +1,8 @@
 {
   "mentors": {
     "mentors": [
-      {"id": 1, "name":{"first": "Денис", "second": "Воронцов"}, "tg_username": "@GoNt1eRRR", "tg_chat_id": 2110069303},
-      {"id": 2, "name":{"first": "Алишер", "second": "Кизатов"}, "tg_username": "@interstellar121", "tg_chat_id": 927169410}
+      {"id": 0, "name":{"first": "Денис", "second": "Воронцов"}, "tg_username": "@GoNt1eRRR", "tg_chat_id": 2110069303},
+      {"id": 1, "name":{"first": "Алишер", "second": "Кизатов"}, "tg_username": "@interstellar121", "tg_chat_id": 927169410}
     ]
   },
   "postcards": {
