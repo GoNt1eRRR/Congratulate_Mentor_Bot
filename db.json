@@ -1,6 +1,9 @@
 {
   "mentors": {
-    "mentors": []
+    "mentors": [
+      {"id": 0, "name":{"first": "Денис 12345 бвб", "second": "Воронцов 565443 аав"}, "tg_username": "@GoNt1eRRR", "tg_chat_id": 2110069303},
+      {"id": 1, "name":{"first": "Алишер", "second": "Кизатов"}, "tg_username": "@interstellar121", "tg_chat_id": 927169410}
+    ]
   },
   "postcards": {
     "postcards": [
