@@ -1,0 +1,100 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Mentors and Postcards API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://my-json-server.typicode.com/devmanorg/congrats-mentor"
+    }
+  ],
+  "paths": {
+    "/mentors": {
+      "get": {
+        "summary": "Get all mentors",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MentorsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/postcards": {
+      "get": {
+        "summary": "Get all postcards",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostcardsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Mentor": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "integer"},
+          "name": {
+            "type": "object",
+            "properties": {
+              "first": {"type": "string"},
+              "second": {"type": "string"}
+            },
+            "required": ["first", "second"]
+          },
+          "tg_username": {"type": "string"},
+          "tg_chat_id": {"type": "integer"},
+          "bday": {"type": "string", "format": "date"}
+        },
+        "required": ["id", "name", "tg_username", "tg_chat_id"]
+      },
+      "MentorsResponse": {
+        "type": "object",
+        "properties": {
+          "mentors": {
+            "type": "array",
+            "items": {"$ref": "#/components/schemas/Mentor"}
+          }
+        },
+        "required": ["mentors"]
+      },
+      "Postcard": {
+        "type": "object",
+        "properties": {
+          "id": {"type": "integer"},
+          "holidayId": {"type": "string"},
+          "name_ru": {"type": "string"},
+          "body": {"type": "string"}
+        },
+        "required": ["id", "holidayId", "name_ru", "body"]
+      },
+      "PostcardsResponse": {
+        "type": "object",
+        "properties": {
+          "postcards": {
+            "type": "array",
+            "items": {"$ref": "#/components/schemas/Postcard"}
+          }
+        },
+        "required": ["postcards"]
+      }
+    }
+  }
+}
