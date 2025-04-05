@@ -1,7 +1,7 @@
 {
   "mentors":{
     "mentors":[
-      {"id":1,"name":{"first":"Евгений","second":"Devman"},"tg_username":"@eugene_dev","tg_chat_id":2110069303,"bday":"1991-02-23"},
+      {"id":1,"name":{"first":"Евгений","second":"Devman"},"tg_username":"@eugene_dev","tg_chat_id":41878799,"bday":"1991-02-23"},
       {"id":2,"name":{"first":"Ильмир","second":"Devman"},"tg_username":"@ilmir_dev","tg_chat_id":6467718221},
       {"id":3,"name":{"first":"Нурбек","second":"Devman"},"tg_username":"@nurbek_dev","tg_chat_id":335075762,"bday":"1991-02-23"}
     ]

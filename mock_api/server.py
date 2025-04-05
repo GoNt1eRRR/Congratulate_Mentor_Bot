@@ -20,11 +20,11 @@ class RequestHandler(SimpleHTTPRequestHandler):
 
             try:
                 json.loads(data)
-                valid_json = True
+                is_valid = True
             except json.JSONDecodeError:
-                valid_json = False
+                is_valid = False
 
-            if valid_json:
+            if is_valid:
                 json_data = json.loads(data)
 
                 if self.path == '/':

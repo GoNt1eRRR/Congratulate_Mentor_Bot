@@ -1,20 +1,6 @@
-import argparse
-import os
 import httpx
-from dotenv import load_dotenv
 import json
 from openapi_schema_validator import validate
-
-load_dotenv()
-
-parser = argparse.ArgumentParser(description="Start Telegram Bot with specified URL")
-parser.add_argument('--url', required=True, help="Specify the URL (TEST_URL for test, PROD_URL for production)")
-args = parser.parse_args()
-
-
-BASE_URL = os.getenv(args.url)
-
-schema_file = "bot/api/schema.json"
 
 
 class ServerError(Exception):
@@ -32,7 +18,7 @@ def validate_json(json_data, schema_file):
         raise ServerError("Ошибка валидации JSON") from e
 
 
-def get_mentors(base_url):
+def get_mentors(base_url, schema_file):
     url = f"{base_url}/mentors"
 
     try:
@@ -61,7 +47,7 @@ def get_mentors(base_url):
         raise ServerError(f"Ошибка сети: {e}") from e
 
 
-def get_postcards(base_url):
+def get_postcards(base_url, schema_file):
     url = f"{base_url}/postcards"
 
     try:
